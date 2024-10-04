@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style .css">
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet" />
+</head>
+<body>
+    
+<div id="container">
+    <!-- Create toolbar container -->
+<div id="toolbar">
+    <!-- Add font size dropdown -->
+    <select class="ql-size">
+      <option value="small"></option>
+      <!-- Note a missing, thus falsy value, is used to reset to default -->
+      <option selected></option>
+      <option value="large"></option>
+      <option value="huge"></option>
+    </select>
+    <!-- Add a bold button -->
+    <button class="ql-bold"></button>
+    <!-- Add subscript and superscript buttons -->
+    <button class="ql-script" value="sub"></button>
+    <button class="ql-script" value="super"></button>
+  </div>
+  <div id="editor"></div>
+</div>
+<div id="toolbar">
+    <!-- Add buttons as you would before -->
+    <button class="ql-bold"></button>
+    <button class="ql-italic"></button>
+  
+    <!-- But you can also add your own -->
+    <button id="custom-button"></button>
+  </div>
+  <div id="editor"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
